@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#f5f5f5">
+
+    <!-- Task List Header -->
+    <TextView
+        android:id="@+id/task_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Task List"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:textColor="#333"
+        android:paddingBottom="8dp" />
+
+    <!-- Task Input -->
+    <EditText
+        android:id="@+id/task_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Task"
+        android:padding="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:textColor="#000000"
+        android:layout_marginTop="3dp" />
+
+    <!-- Add Task Button -->
+    <Button
+        android:id="@+id/add_task_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Task"
+        android:layout_gravity="right"
+        android:backgroundTint="#6200EA"
+        android:textColor="#fff"
+        android:layout_marginTop="10dp" />
+
+    <!-- Task List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/task_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"
+        android:background="#ffffff"
+        android:elevation="3dp" />
+
+</LinearLayout>

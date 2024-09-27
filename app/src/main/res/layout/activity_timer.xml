@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- Timer Display -->
+    <TextView
+        android:id="@+id/timer_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00:00"
+        android:textSize="48sp"
+        android:textColor="#6200EA"
+        android:layout_marginBottom="16dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp"
+        android:gravity="center">
+
+        <!-- Start Timer Button -->
+        <Button
+            android:id="@+id/start_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Timer"
+            android:backgroundTint="#6200EA"
+            android:textColor="#fff"
+            android:layout_marginEnd="16dp" />
+
+        <!-- Stop Timer Button -->
+        <Button
+            android:id="@+id/stop_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop Timer"
+            android:backgroundTint="#D32F2F"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+    <!-- Reset Timer Button -->
+    <Button
+        android:id="@+id/reset_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset Timer"
+        android:backgroundTint="#6200EA"
+        android:textColor="#fff"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Lap Times Display -->
+    <LinearLayout
+        android:id="@+id/lap_times_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+</LinearLayout>
